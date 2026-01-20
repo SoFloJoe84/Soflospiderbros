@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joseph Harris's personal site from Palm Bay, Florida. Tech recommendations and more.">
+    <title>Joseph Harris's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .product h3 {
+            margin-top: 0;
+        }
+        .product a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .product a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Joseph Harris's Website</h1>
+        <p>From Palm Bay, Florida – Building cool stuff since 1984</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is a simple website example. Add your content here!</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Joseph. I enjoy tech, AI, and exploring new ideas. This site was generated with help from Grok.</p>
+    </section>
+    
+    <section id="recommendations">
+        <h2>Product Recommendations</h2>
+        <p>Here are some tech products I recommend. As an Amazon Associate, I earn from qualifying purchases.</p>
+        
+        <div class="product">
+            <h3>Wireless Headphones</h3>
+            <p>Great sound quality and battery life for everyday use.</p>
+            <a href="https://www.amazon.com/dp/B07PZTM2G2?tag=yourtag-20" target="_blank">Buy on Amazon</a>
+        </div>
+        
+        <div class="product">
+            <h3>Smart Home Device</h3>
+            <p>Control your home with voice commands—perfect for tech enthusiasts.</p>
+            <a href="https://www.amazon.com/dp/B07DCT2BKV?tag=yourtag-20" target="_blank">Buy on Amazon</a>
+        </div>
+        
+        <div class="product">
+            <h3>Portable Charger</h3>
+            <p>Keep your devices powered on the go.</p>
+            <a href="https://www.amazon.com/dp/B07CZDXDG8?tag=yourtag-20" target="_blank">Buy on Amazon</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Reach me on X: @JosephAH1984</p>
+        <button onclick="alert('Thanks for visiting!')">Say Hi</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Joseph Harris. All rights reserved.</p>
+        <p>Disclosure: As an Amazon Associate, I earn from qualifying purchases.</p>
+    </footer>
 
+    <script>
+        // Simple JavaScript for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
